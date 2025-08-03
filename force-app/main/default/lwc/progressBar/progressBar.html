@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Progreso de Tareas" icon-name="standard:task">
+        <div class="slds-p-horizontal_medium slds-p-vertical_small">
+            <template if:true={hasData}>
+                <div class="slds-text-heading_small slds-m-bottom_small">
+                    {completedTasks} de {totalTasks} tareas completadas
+                </div>
+                <lightning-progress-bar 
+                    value={progressPercentage} 
+                    size="large"
+                    variant="base">
+                </lightning-progress-bar>
+                <div class="slds-text-align_center slds-m-top_small slds-text-body_small">
+                    {progressPercentage}% completado
+                </div>
+            </template>
+            <template if:false={hasData}>
+                <div class="slds-text-align_center slds-text-body_small">
+                    No hay seguimientos para este Contacto
+                </div>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-align_center slds-text-color_error">
+                    Error cargando datos: {error}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
