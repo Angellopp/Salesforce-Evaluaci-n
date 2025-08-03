@@ -130,3 +130,13 @@ Se mplementó la regla de negocio - máximo 5 seguimientos pendientes por contac
 - Configuré Fault Connector en el elemento Create Records
 - Creé una pantalla de error personalizada
 - Implementé mensajes más descriptivos para el usuario
+
+## Entregables y Acceso
+
+### Acceso a Developer Edition
+- **URL:** https://orgfarm-4b463f3b49-dev-ed.develop.my.salesforce.com/
+- **Usuario:** angello.pisfil.p992@agentforce.com
+- **Contraseña:** 21deabril
+
+### Código Fuente
+- **GitHub:** https://github.com/Angellopp/Salesforce-Evaluaci-n/tree/main
